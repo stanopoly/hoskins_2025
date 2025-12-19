@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <title>Hoskins Family Christmas 2025</title>
 
-  <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;500;700&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      background: radial-gradient(circle at top, #203a72, #0c162c, #050910);
+      background: radial-gradient(circle at top, #4CBB17;
       font-family: "Nunito", sans-serif;
       color: #fff;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 40px auto;
       background: rgba(20, 29, 53, 0.9);
       border-radius: 20px;
@@ -42,12 +41,18 @@
       margin-bottom: 20px;
     }
 
+    /* --- NEW SPLIT LAYOUT --- */
+    .content {
+      display: flex;
+      gap: 24px;
+    }
+
     .poem {
+      flex: 1;
       background: rgba(255,255,255,0.06);
       border-radius: 12px;
       padding: 18px;
       line-height: 1.55;
-      margin-bottom: 30px;
       font-size: .95rem;
     }
 
@@ -56,16 +61,17 @@
     }
 
     .gallery {
+      flex: 1;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
     }
 
     .gallery img {
       width: 100%;
-      height: 200px;
+      height: 160px;
       object-fit: cover;
-      border-radius: 16px;
+      border-radius: 12px;
       border: 1px solid rgba(255,255,255,0.3);
     }
 
@@ -75,6 +81,18 @@
       color: #cbd5f5;
       font-size: .9rem;
     }
+
+    /* --- RESPONSIVE VIEW FOR MOBILE --- */
+    @media (max-width: 900px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+
   </style>
 
 </head>
@@ -85,48 +103,54 @@
     <h1>Hoskins Family Christmas 2025</h1>
     <h2>Winter Wishes • Warm Memories • Bright New Year</h2>
 
-    <div class="poem">
+    <div class="content">
 
-      <p>Our 2025 was one of change and one of loss, but there were plenty
-      of celebrations, too! We gained two loved ones to our state, we mourned our family pet and saw Presley become a bride, not one but two.</p>
+      <!-- LEFT SIDE : POEM -->
+      <div class="poem">
 
-      <p>We were joined this past spring by Kristi’s parents, Jerry and Linda. From shores of the Big Island of Hawaii to an ethereal new home in Laguna Woods. Staying busy with their hiking, gardening and Estate Sale hunting, it looks like the fit is real good!</p>
+        <p>Our 2025 was one of change and one of loss, but there were plenty
+        of celebrations, too! We gained two loved ones to our state, we mourned our family pet and saw Presley become a bride, not one but two.</p>
 
-      <p>Many of you have seen our pictures of our beloved dog, Rocko. Our good boy was needed in heaven this year after 14 years of guarding our home from sketchy mailmen and squirrels. He was given many treats in his lifetime, but his dad would give him treats from the dinner table, which he knew would lead to quarrels. (And it was worth it!)</p>
+        <p>We were joined this past spring by Kristi’s parents, Jerry and Linda. From shores of the Big Island of Hawaii to an ethereal new home in Laguna Woods. Staying busy with their hiking, gardening and Estate Sale hunting, it looks like the fit is real good!</p>
 
-      <p>We were fortunate to enjoy a week in the state we grew up in, Colorado. It was a combination of walking down memory lane, visiting family and seeing our niece, Presley get hitched. We spent time in Vail where we were married, time in Ft. Collins, where we went to school, and finished in Boulder for a beautiful wedding, our appreciation of the Flat Irons majesty was enriched.</p>
+        <p>Many of you have seen our pictures of our beloved dog, Rocko. Our good boy was needed in heaven this year after 14 years of guarding our home from sketchy mailmen and squirrels. He was given many treats in his lifetime, but his dad would give him treats from the dinner table, which he knew would lead to quarrels. (And it was worth it!)</p>
 
-      <p>I haven’t mentioned Luke thus far, our soon-to-be graduate. Some of you may remember Luke for is many stitches and broken bones. Well, he outdid himself this year, dislocating his elbow, which ended his intramural sports career, but he’s not one to groan.</p>
+        <p>We were fortunate to enjoy a week in the state we grew up in, Colorado. It was a combination of walking down memory lane, visiting family and seeing our niece, Presley get hitched. We spent time in Vail where we were married, time in Ft. Collins, where we went to school, and finished in Boulder for a beautiful wedding, our appreciation of the Flat Irons majesty was enriched.</p>
 
-      <p>Kristi and Kelly had a nice trip to Oklahoma, visiting Aunt Coby and Uncle Ed. They celebrated their Chickasaw Heritage and got caught up on their busy lives. It’s trips like this that keep sisters bonded.</p>
+        <p>I haven’t mentioned Luke thus far, our soon-to-be graduate. Some of you may remember Luke for is many stitches and broken bones. Well, he outdid himself this year, dislocating his elbow, which ended his intramural sports career, but he’s not one to groan.</p>
 
-      <p>Just before Thanksgiving, Kristi was in New York City mixing business with Holiday Cheer. Of all the times to be there, the decorations were shining, Wicked was everywhere, and ice skating at Rockefeller Plaza, it was the perfect time of year.</p>
+        <p>Kristi and Kelly had a nice trip to Oklahoma, visiting Aunt Coby and Uncle Ed. They celebrated their Chickasaw Heritage and got caught up on their busy lives. It’s trips like this that keep sisters bonded.</p>
 
-      <p>And to end 2025 with a bang, we shared Thanksgiving with the Pearson-Leahy-Wahlberg-Bridgewater clan. Our awesome friend Vicki put us up for a week, while giving away her eldest daughter, OG Presley. It was a wonderful ceremony, and we enjoyed time with Luke and an old family friend, followed by a lovely Thanksgiving feast  (No rhyme on this verse, sorry).</p>
+        <p>Just before Thanksgiving, Kristi was in New York City mixing business with Holiday Cheer. Of all the times to be there, the decorations were shining, Wicked was everywhere, and ice skating at Rockefeller Plaza, it was the perfect time of year.</p>
 
-      <p>Let’s spend 2026 lifting each other up. Pray for each other, be kind, be forgiving and polite. As the great poet Bob Marley wrote: One Love, One Heart, let’s get together and feel alright!</p>
+        <p>And to end 2025 with a bang, we shared Thanksgiving with the Pearson-Leahy-Wahlberg-Bridgewater clan. Our awesome friend Vicki put us up for a week, while giving away her eldest daughter, OG Presley. It was a wonderful ceremony, and we enjoyed time with Luke and an old family friend, followed by a lovely Thanksgiving feast  (No rhyme on this verse, sorry).</p>
 
-    </div>
+        <p>Let’s spend 2026 lifting each other up. Pray for each other, be kind, be forgiving and polite. As the great poet Bob Marley wrote: One Love, One Heart, let’s get together and feel alright!</p>
 
-    <div class="gallery">
+      </div>
 
-      <!-- Replace these with your real filenames in /images folder -->
+      <!-- RIGHT SIDE : PHOTO GALLERY -->
+      <div class="gallery">
+
+           <!-- Replace these with your real filenames in /images folder -->
       <img src="images/A.jpg" alt="Image 1">
       <img src="images/B.jpg" alt="Image 2">
       <img src="images/C.jpg" alt="Image 3">
       <img src="images/D.jpg" alt="Image 4">
       <img src="images/E.jpg" alt="Image 5">
       <img src="images/F.jpg" alt="Image 6">
-<img src="images/G.jpg" alt="Image 7">
-<img src="images/H.jpg" alt="Image 8">
-<img src="images/I.jpg" alt="Image 9">
-<img src="images/J.jpg" alt="Image 10">
-<img src="images/K.jpg" alt="Image 11">
-<img src="images/L.jpg" alt="Image 12">
-<img src="images/M.jpg" alt="Image 13">
-<img src="images/N.jpg" alt="Image 14">
-<img src="images/O.jpg" alt="Image 15">
-<img src="images/P.jpg" alt="Image 16">
+      <img src="images/G.jpg" alt="Image 7">
+      <img src="images/H.jpg" alt="Image 8">
+      <img src="images/I.jpg" alt="Image 9">
+      <img src="images/J.jpg" alt="Image 10">
+      <img src="images/K.jpg" alt="Image 11">
+      <img src="images/L.jpg" alt="Image 12">
+      <img src="images/M.jpg" alt="Image 13">
+      <img src="images/N.jpg" alt="Image 14">
+      <img src="images/O.jpg" alt="Image 15">
+      <img src="images/P.jpg" alt="Image 16">
+
+      </div>
 
     </div>
 
