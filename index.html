@@ -75,20 +75,15 @@
 
   .gallery img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 160px;
+    .vertical {
+  height: 300px;   /* taller */
+  object-fit: cover;
+      object-position: top;
+  height: 300px;
     border-radius: 12px;
     border: 2px solid #f7d774;
     box-shadow: 0 0 8px rgba(0,0,0,0.6);
-
-    .vertical {
-  height: 300px;   /* taller */
-  object-fit: cover; 
-  }
-   .top-fill {
-  object-fit: cover;
-  object-position: top;
-  height: 300px; /* optional */
 }
 
   footer {
